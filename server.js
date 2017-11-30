@@ -19,5 +19,9 @@ app.get('/new' , (req , res) =>{
 
 })
 
+app.get('/saludar' , (req , res )=>{
+  res.send({message: 'Hola don nelson'})
+})
+
 
 app.listen(port);
