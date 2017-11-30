@@ -14,5 +14,10 @@ app.post('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
+app.get('/new' , () =>{
+  res.send({ salida: 'Hola Mundo!!!' })
+
+})
+
 
 app.listen(port);
