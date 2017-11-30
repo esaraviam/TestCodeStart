@@ -14,7 +14,7 @@ app.post('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
-app.get('/new' , () =>{
+app.get('/new' , (req , res) =>{
   res.send({ salida: 'Hola Mundo!!!' })
 
 })
