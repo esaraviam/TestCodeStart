@@ -1,5 +1,6 @@
 var port = process.env.PORT || 3000;
 var express = require('express');
+const moment = require('moment')
 
 var app = express();
 
@@ -23,8 +24,9 @@ app.get('/saludar' , (req , res )=>{
   res.send({message: 'Hola don nelson'})
 })
 app.get('/webpeck' , (req, res) =>{
+  let fecha = moment().format()
   res.send({
-    message: 'pequeño'
+    message: 'pequeño' + fecha
   })
 
 })
